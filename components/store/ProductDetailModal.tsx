@@ -99,7 +99,7 @@ export default function ProductDetailModal({
               </button>
 
               {/* Imagen / carrusel */}
-              <div className="relative shrink-0" style={{ aspectRatio: "16/9" }}>
+              <div className="relative shrink-0 overflow-hidden" style={{ aspectRatio: "16/9", maxHeight: "45vh" }}>
                 {tieneImagenes ? (
                   <>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -157,7 +157,7 @@ export default function ProductDetailModal({
               </div>
 
               {/* Contenido */}
-              <div className="overflow-y-auto flex-1 p-5 sm:p-6 flex flex-col gap-4">
+              <div className="overflow-y-auto flex-1 min-h-0 p-5 sm:p-6 flex flex-col gap-4">
                 <div>
                   <span
                     className="text-xs font-semibold uppercase tracking-wider"
